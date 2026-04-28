@@ -52,19 +52,6 @@ The **Social Connect App** is a user-centric social media platform designed to f
 
 ---
 
-## 📂 Repository Structure
-```text
-socialconnect-ui/
-├── README.md                        # Project case study (this file)
-├── design-system/                   # Foundations (Colors, Typography, Spacing)
-├── screens/                         # High-fidelity exports (Light & Dark modes)
-├── research/                        # Usability Testing Report & Feedback analysis
-├── prototype/                       # Final .fig export and interactive links
-└── presentation/                    # Final walkthrough video
-```
-
----
-
 ## 🚀 Final Deliverables
 1.  **Interactive Figma Prototype:** https://www.figma.com/design/loslJWaseSD0lLASCeqGsr/social-connect-app?node-id=23-538&p=f&t=PcRcx9wOTBlZY2nj-0
 2.  **Figma Design File:** https://www.figma.com/design/loslJWaseSD0lLASCeqGsr/social-connect-app?node-id=23-538&p=f&t=PcRcx9wOTBlZY2nj-0
