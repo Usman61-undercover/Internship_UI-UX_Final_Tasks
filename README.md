@@ -1,56 +1,145 @@
 # Internship_UI-UX_Final_Tasks
-Below is the complete, professionally structured `README.md` for your **Social Connect App** GitHub repository. It incorporates the updated project plan for Weeks 4–6, your usability testing data, and the final branding refinements.
+# SocialConnect — UI/UX Design (Weeks 4–6)
+Internship Final Submission | DevelopersHub Corporation  
+Final Deadline: 28 April 2026
 
 ---
 
-# Social Connect App — UI/UX Design Case Study
-**Organization:** Developer Hub Corporation
-**Internship Phase:** Final Submission (Weeks 4–6)
-**Final Deadline:** 28th April, 2026
+## Project Overview
+SocialConnect is a mobile social media app designed across 6 weeks of UI/UX work — from wireframes to developer-ready handoff.
 
-## 📌 Project Overview
-The **Social Connect App** is a user-centric social media platform designed to foster digital interaction through a clean, intuitive interface. Following the initial research phase, this final stage focused on **usability testing**, **brand refinement**, and **accessibility optimization** to prepare the product for professional developer handoff.
+## Screens Delivered
+| # | Screen      | Light | Dark |
+|---|-------------|-------|------|
+| 1 | Login       | ✓     | ✓    |
+| 2 | Feed        | ✓     | ✓    |
+| 3 | Profile     | ✓     | ✓    |
+| 4 | Create Post | ✓     | ✓    |
+| 5 | Settings    | ✓     | ✓    |
 
----
-
-## 📅 Final Phase Milestones & Process
-
-### Week 4: Usability Testing & Iteration
-* **Testing Scenarios:** Conducted tests on key flows including Sign-Up, Home Feed navigation, and Post Creation.
-* **Feedback Analysis:** Identified pain points regarding navigation clarity; specifically, users requested labels and better visual cues.
-* **Design Updates:** Refined the navigation bar and typography based on user feedback to ensure a more seamless experience.
-
-### Week 5: Advanced Design & Visual Enhancements
-* **Brand Identity:** Finalized the primary logo and established a consistent brand presence across all 10+ screens.
-* **Microinteractions:** Added Smart Animate transitions for buttons, state changes, and post-loading sequences.
-* **Advanced Features:** Developed a comprehensive **Dark Mode** theme and custom **Empty State** designs for a polished, modern UI.
-
-### Week 6: Developer Handoff & Finalization
-* **File Organization:** Grouped and named all layers/components for engineering efficiency.
-* **Handoff Documentation:** Annotated design specs including dimensions ($16px$/$24px$ grids), margins, and hex codes.
-* **Final Presentation:** Produced a walkthrough video showcasing core features, branding, and WCAG compliance.
+**Design tool:** Figma  
+**Brand color:** #7F77DD (Purple)  
+**Fonts:** SF Pro Display / SF Pro Text
 
 ---
 
-## 🎨 Design System
+## Week 4 — Usability Testing
+
+**Tool:** Google Forms  
+**Testers:** 3 participants (ages 18–30)  
+**Task completion rate:** 100%  
+**Average design rating:** 3.8 / 5  
+
+### Key Pain Points & Fixes
+| Issue | Severity | Resolution |
+|-------|----------|------------|
+| Bottom nav icon-only, no labels | High — 2/3 testers | Added text labels, stronger active state |
+| Share button too subtle | Medium — 1/3 testers | Increased size and spacing |
+| App theme with dummy data | Medium — 1/3 testers | Refined visual polish, real-looking content |
+| Profile edit not obvious | Low | Pencil icon on avatar + edit button above fold |
+
+---
+
+## Week 5 — Advanced Design
+
+### Logo (3 variants)
+- `logo-purple-bg.png` — Primary app icon (purple background)
+- `logo-gray-bg.png` — For light surfaces
+- `logo-transparent.png` — For dark surfaces and overlays
+
+**Concept:** Node-and-connection motif communicating social connectivity. Scalable from 16px favicon to 512px app icon.
 
 ### Color Palette
-| Category | Token | Hex Code | Usage |
-| :--- | :--- | :--- | :--- |
-| **Primary** | Brand Blue | `#5D5FEF` | Main CTAs (Sign In, Post Creation) |
-| **Neutral** | Text Primary | `#1A1A1A` | Main Headings (Light Mode) |
-| | Text Secondary| `#555555` | Body/Sub-text |
-| | Background | `#FFFFFF` | Light Mode Body |
-| | Dark Surface | `#121212` | Dark Mode Body |
-| **Semantic** | Success | `#4CAF50` | Form validation & Success states |
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Brand primary | #7F77DD | Buttons, active states |
+| Brand light | #EEEDFE | Ghost buttons, hover |
+| Brand dark | #534AB7 | Pressed states, headers |
+| Text primary | #1A1A1A | Headings, body |
+| Text secondary | #555555 | Captions, meta |
+| Background | #F8F7F5 | Page background |
+| Surface | #FFFFFF | Cards, modals |
+| Dark surface | #1A1A2E | Dark mode page |
+| Dark card | #16213E | Dark mode cards |
 
-### Accessibility (WCAG 2.1 Compliance)
-* **Contrast Ratios:** All text-to-background combinations meet or exceed AA standards (approx. $4.6:1$ for brand and $18:1$ for body).
-* **Dark Mode:** High-contrast dark theme implemented for low-light environments and user preference.
-* **Touch Targets:** All interactive icons and buttons maintain a minimum $44 \times 44 px$ area for ease of use.
-* **Inclusive Design:** Optimized form logic with labels placed above inputs and visible password toggles.
+### Typography Scale
+| Role | Size | Weight |
+|------|------|--------|
+| Page title | 24px | 700 |
+| Section heading | 18px | 600 |
+| Body text | 15px | 400 |
+| Label / caption | 13px | 500 |
+| Micro / badge | 11px | 500 |
+
+### Microinteractions (Figma Smart Animate)
+| Component | Animation | Duration |
+|-----------|-----------|----------|
+| Primary button | Scale 1→0.97→1, color deepen | 120ms ease |
+| Follow button | Text switches, fill toggles | 200ms |
+| Like / heart | Scale pop 1→1.3→1, turns red | 150ms spring |
+| FAB button | Rotates 45°, sub-actions appear | 220ms ease-out |
+| Bottom nav tab | Icon lifts 2px, label fades in | 160ms ease |
+| Screen transitions | Horizontal slide (iOS) | 300ms ease-in-out |
+| Feed loading | Skeleton shimmer | Loop 1.2s |
+
+### Empty States
+- **No posts yet** — Camera icon, "Nothing here yet", CTA: Create Post
+- **No followers yet** — Silhouettes icon, "No followers yet", CTA: Share Profile
+- **All caught up** — Bell icon, "All caught up", no CTA
+
+### Accessibility — WCAG 2.1 AA
+- Body text contrast: 18.1:1 ✓
+- Brand purple on white: 4.5:1 ✓
+- All touch targets: 48px minimum ✓
+- Dark mode: all 5 screens ✓
+- Minimum font size: 13px ✓
+- Form labels above inputs ✓
+- Error states use icon + color, not color alone ✓
 
 ---
+
+## Week 6 — Developer Handoff
+
+### Frame Specifications
+| Element | Value |
+|---------|-------|
+| Base frame | 390 × 844px (iPhone 14) |
+| Horizontal margin | 24px |
+| Card padding | 16px |
+| Top bar height | 56px |
+| Bottom nav height | 83px (incl. 34px safe area) |
+| Feed avatar | 40px circle |
+| Profile avatar | 88px circle |
+| FAB button | 56px circle |
+| Primary button height | 52px |
+| Input field height | 52px |
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| sm | 8px | Tags, badges |
+| md | 12px | Inputs, inner cards |
+| lg | 16px | Main cards, modals |
+| pill | 100px | Buttons, chips |
+| circle | 50% | Avatars, FAB |
+
+### Layer Naming Convention
+```
+Pattern: Screen/Component/Variant
+
+Examples:
+  Feed/PostCard/Default
+  Feed/PostCard/WithImage
+  Feed/PostCard/Dark
+  Global/BottomNav/Light
+  Global/BottomNav/Dark
+  Auth/InputField/Empty
+  Auth/InputField/Filled
+  Auth/InputField/Error
+  Settings/ToggleRow/On
+  Settings/ToggleRow/Off
+```
+
 
 ## 🚀 Final Deliverables
 1.  **Interactive Figma Prototype:** https://www.figma.com/design/loslJWaseSD0lLASCeqGsr/social-connect-app?node-id=23-538&p=f&t=PcRcx9wOTBlZY2nj-0
