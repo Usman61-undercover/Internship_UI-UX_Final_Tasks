@@ -1,1 +1,86 @@
+Week 6 — Developer Handoff & Final Presentation
+1. Figma File Organization (Do this first)
+Layer naming convention — use this exactly:
+Screen / Component / Variant
+Examples:
+  Feed / PostCard / Default
+  Feed / PostCard / WithImage
+  Feed / PostCard / Dark
+  Global / BottomNav / Light
+  Global / BottomNav / Dark
+  Auth / InputField / Empty
+  Auth / InputField / Filled
+  Auth / InputField / Error
+Grouping checklist before handoff:
 
+Every screen is its own Figma frame, named clearly (01-Login, 02-Feed, etc.)
+Reusable elements (buttons, inputs, nav bar) are components, not flat shapes
+All colors use your local Figma color styles (not hardcoded fills)
+All text uses Figma text styles (Heading/24, Body/15, Label/13, etc.)
+No hidden or orphan layers sitting outside frames
+
+
+2. Annotation Specs (Add these directly on Figma frames)
+For each screen, annotate these using Figma's annotation tool or sticky note boxes:
+Spacing
+
+Page margin: 24px horizontal
+Card padding: 16px all sides
+Gap between cards: 12px
+Bottom nav height: 83px (34px safe area included)
+Top bar height: 56px
+
+Component sizes
+
+Primary button: 52px height, full width, radius 100px
+Input field: 52px height, radius 12px
+Feed avatar: 40px circle
+Profile avatar: 88px circle
+FAB button: 56px circle
+
+Colors (annotate on each component)
+
+Primary action: #E8541A
+Pressed/hover: #B83D0E
+Background: #F8F7F5
+Card surface: #FFFFFF
+Border: #E0DDD8
+
+
+3. Prototype — Final Testing Checklist
+Go through every flow and confirm these all work in Figma prototype mode:
+FlowStepsCheckSign inLogin → Feed☐Create postFAB → Create Post screen → tap Post → Feed☐View profileFeed → tap avatar → Profile☐Follow userProfile → tap Follow → button changes to Following☐Open settingsBottom nav Settings → Settings screen☐Dark mode toggleSettings → Private Account toggle animates☐Back navigationEvery screen → back arrow works☐
+Fix any broken connections before submitting.
+
+4. Additional Design Assets to Export
+Export these from Figma and add to your GitHub repo /week6-handoff/assets/ folder:
+
+Logo PNG — 3 variants at 1x, 2x, 3x
+App icon — 1024×1024px (for App Store/Play Store)
+Favicon — 32×32px
+All custom icons used in the app (SVG format)
+Color palette swatch PNG
+Typography specimen PNG (showing your type scale)
+
+
+5. prototype-link.md (Add to your repo)
+markdown# SocialConnect — Prototype Links
+
+## Figma Design File
+[Paste your Figma file link here]
+
+## Interactive Prototype
+[Paste your Figma prototype link here]
+
+## Prototype flows covered
+- Onboarding / Login
+- Home feed browsing
+- Creating a post
+- Viewing a user profile
+- Updating settings
+
+## Device frame
+iPhone 14 — 390 × 844px
+
+## Last updated
+28 April 2026
